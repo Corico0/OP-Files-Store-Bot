@@ -23,7 +23,7 @@ DB_URI = os.environ.get("mongodb+srv://isorop3:<A9URZZx!22PvYPu>@cluster0.tnslrf
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
-TG_BOT_WORKERS = int(os.environ.get("6123925166:AAHQt-1170af7MubS_atBvivr76sBzu5RsQ", "4"))
+TG_BOT_WORKERS = int(os.environ.get("890517302", "4"))
 
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI store Forex-Backtest private files in and other users can access it from special link.")
