@@ -7,8 +7,8 @@
     "sharing"
   ],
   "repository": "https://github.com/Aadhi000/OP-Files-Store-Bot",
-  "logo": "https://telegra.ph/file/12921701faf018f20c6a4.jpg",
-  "env": {
+  "logo": "https://ibb.co/FgPVtzw",
+"env": {
     "TG_BOT_TOKEN": {
       "description": "Your Bot token, Get it from @Botfather",
       "value": "6123925166:AAHQt-1170af7MubS_atBvivr76sBzu5RsQ"
@@ -17,10 +17,18 @@
       "description": "Your Telegram ID",
       "value": "890517302"
     },
+    "DATABASE_URL": {
+      "description": "Paste your mongo db url",
+      "value": "mongodb+srv://isorop3:<A9URZZx!22PvYPu>@cluster0.tnslrfe.mongodb.net/?retryWrites=true&w=majority"
+    },
+    "DATABASE_NAME":{
+      "description": "Enter your DATABASE_NAME ",
+      "value": "Cluster0"
+    },
     "APP_ID":{
       "description": "your api id, take it from my.telegram.org",
       "value": "28679367"
-    },
+
     "API_HASH":{
       "description": "your api hash, take it from my.telegram.org",
       "value": "1ea51b65450e828cffd1e6840e437363"
@@ -35,7 +43,7 @@
     },
     "START_MESSAGE": {
       "description": "Optional: start message of bot, use HTML parsemode format",
-      "value": "Hey {first}\n\nI store FOREX-Backtest private files and other users can access it using a special link."
+      "value": "Hello {first}\n\nI store Forex-Backtest private files and other users can access it from special link."
     },
     "FORCE_SUB_MESSAGE": {
       "description": "Optional: Force Sub message of bot, use HTML parsemode format",
@@ -45,16 +53,13 @@
       "description": "A space separated list of user_ids of Admins, they can only create links",
       "value": "890517302",
       "required": false
+    },
+    "PROTECT_CONTENT": {
+      "description": "Protect contents from getting forwarded",
+      "value": "True",
+      "required": false
     }
   },
-  "addons": [
-    {
-    "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
-  ],
   "buildpacks": [
     {
       "url": "heroku/python"
@@ -67,4 +72,3 @@
     }
   }
 }
-
